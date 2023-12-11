@@ -15,3 +15,6 @@ This project is built in order to practice CSS Grid system and some animations. 
 https://xavier-hsiao.github.io/3d-artist-portfolio/
 
 ## Screenshot
+![screenshot1](https://github.com/Xavier-Hsiao/3d-artist-portfolio/blob/master/screenshots/3d-artist-portfolio-1.png)
+
+![screenshot2](https://github.com/Xavier-Hsiao/3d-artist-portfolio/blob/master/screenshots/3d-artist-portfolio-2.png)
