@@ -47,7 +47,9 @@ body {
   height: 50px;
 }
 
-.navbar .bar {
+.bar1,
+.bar2,
+.bar3 {
   width: 36px;
   height: 4px;
   margin: 3px;
@@ -205,5 +207,51 @@ body {
 
   .project .overlay {
     font-size: 24px;
+  }
+}
+
+@keyframes flipBar1 {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(45deg) translate(4px, 10px);
+  }
+}
+
+@keyframes fadeBar2 {
+  from {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+/* Hamburger animation */
+.animateBar1 {
+  animation: flipBar1 1s forwards;
+}
+
+.animateBar2 {
+  animation: fadeBar2 1s forwards;
+}
+
+.animateBar3 {
+  animation: flipBar3 1s forwards;
+}
+
+
+@keyframes flipBar3 {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-45deg) translate(4px, -10px);
   }
 }
