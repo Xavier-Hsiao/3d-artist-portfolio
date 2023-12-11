@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -38,6 +39,20 @@ body {
 .nav-list .nav-link img {
   width: 24px;
   height: 24px;
+}
+
+.navbar .hamburger {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar .bar {
+  width: 36px;
+  height: 4px;
+  margin: 3px;
+  border-radius: 10px;
+  background-color: #000;
 }
 
 /* Projects */
@@ -153,8 +168,30 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    max-width: 90%;
+    padding: 16px 24px;
+    background-color: #fff;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .project-grid {
-    grid-template-areas: 
+    grid-template-areas:
       "eth eth"
       "alphabet alphabet"
       "traveler traveler"
@@ -162,8 +199,8 @@ body {
       "insta insta"
       "cup cup"
       "foam foam"
-      "dimensional dimensional"
-    ;
+      "dimensional dimensional";
+    margin-top: 70px;
   }
 
   .project .overlay {
